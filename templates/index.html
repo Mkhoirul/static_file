@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<title>{{title}}</title>
 	<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
 	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand" href="#">
-	  	<img style="height: 30px" src="{% static "img/logo.png" %}" alt="">
+	  	<img style="height: 30px" src="{% static "img/logo.png" %}">
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -34,7 +35,7 @@
 	</nav>
 
 	<div class="jumbotron jumbotron-fluid">
-  		<div class="container">
+  		<div class="container text-white text-center">
    			 <h1 class="display-4">{{heading}}</h1>
    			 <p class="lead">{{subheading}}</p>
   		</div>
