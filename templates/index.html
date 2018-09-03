@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
-	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	 <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="myNav">
 	  <a class="navbar-brand" href="#">
 	  	<img style="height: 30px" src="{% static "img/logo.png" %}">
 	  </a>
@@ -29,7 +29,6 @@
 			<li class="nav-item">
 				<a class="nav-link" href="/about" title="">About</a>
 			</li>
-		
 	    </ul>
 	  </div>
 	</nav>
@@ -69,5 +68,6 @@
 	<script src="{% static "vendor/jquery/jquery-3.3.1.min.js" %}"></script>
 	<script src="{% static "vendor/popper/popper.min.js" %}"></script>
 	<script src="{% static "vendor/bootstrap/bootstrap.js" %}"></script>
+	<script src="{% static "js/scrolling.js"  %}"></script>
 </body>
 </html>
