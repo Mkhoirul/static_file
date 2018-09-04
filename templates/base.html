@@ -5,7 +5,12 @@
 	<meta charset="UTF-8">
 	<title>{{title}}</title>
 	{% include "snippets/styles.html" %}
+
+	{% block app_css %}
+	    
 	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	
+	{% endblock app_css %}
 </head>
 <body>
 	{% include "snippets/navbar.html" %}
