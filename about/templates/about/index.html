@@ -7,6 +7,18 @@
 {% endblock app_css %}
 
 {% block header %}
-    <h1>{{heading}}</h1>
-    <p class="lead">{{subheading}}</p>
+    <h1 class="text-left" style="margin-top: 200px">{{heading}}</h1>
+    <p class="lead text-left">{{subheading}}</p>
 {% endblock header %}
+
+{% block content-1 %}
+    <div class="row" style="height: 400px;margin-top: -100px">
+    	<h1>content dari about</h1>
+    </div>
+{% endblock content-1 %}
+
+{% block content-2 %}
+    <div class="row bg-warning" style="height: 400px">
+    	<h1>content 2</h1>
+    </div>
+{% endblock content-2 %}
