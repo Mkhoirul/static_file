@@ -20,28 +20,18 @@
 	
 	<div class="container-fluid">
 		<div class="container bg-info text-white shadow" id="myBody">
-			<div class="row" style="height: 400px;margin-top: -100px">
-				<h1>Content 1</h1>
-			</div>
+			{% block content-1 %}
+			    
+			{% endblock content-1 %}
+
 		</div>
 
 		<div class="container bg-warning text-dark shadow">
-			<div class="row" style="height: 300px">
-				<h1>Content 2</h1>
-			</div>
+			{% block content-2 %}
+			    
+			{% endblock content-2 %}
 		</div>
 
-		<div class="container bg-danger text-white shadow">
-			<div class="row" style="height: 300px">
-				<h1>Content 3</h1>
-			</div>
-		</div>
-
-		<div class="container bg-dark text-white shadow">
-			<div class="row" style="height: 300px">
-				<h1>Content 3</h1>
-			</div>
-		</div>
 	</div>
 	{% include "snippets/scripts.html" %}
 </body>
